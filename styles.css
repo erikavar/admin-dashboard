@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 125px 1fr;
+}
+
+.header {
+    background-color: rgb(235, 168, 209);
+    color: white;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.searchbar-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.searchbar-row > * {
+    align-self: center;
+}
+
+.symbolandbar {
+    margin-left: 10px;
+    display: flex;
+}
+
+.notifs-pfp-username {
+    display: flex;
+    justify-content: end;
+}
+
+.notifs-pfp-username > * {
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+.bar {
+    margin-left: 10px;
+    border: 1px solid white;
+    height: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.greeting > img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.greeting-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.greeting-row > * {
+    align-items: center;
+}
+
+.greeting, .actionbuttons {
+    display: flex;
+}
+
+.actionbuttons {
+    justify-content: end;
+}
+
+.actionbuttons > * {
+    margin: 10px;
+    border: 1px solid white;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(140, 204, 140);
+}
+
+.sidebar {
+    background-color: rgb(140, 204, 140);
+    color: white;
+    padding: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 75px 240px 120px;
+}
+
+.bartop, .barbottom {
+    display: grid;
+    gap: 3px;
+    justify-items: start;
+}
+
+.bartop > p, .barbottom > p {
+    display: flex;
+}
+
+.bartop > p > span, .barbottom > p > span {
+    margin-right: 15px;
+}
+
+.barbottom {
+    margin-top: 10px;
+}
+
+.main-content {
+    background-color: rgb(251, 227, 241);
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+}
+
+.proj-container {
+    margin-top: 10px;
+}
+
+.projects {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-column: 1 / 2;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-left: 12px;
+}
+
+.proj-container > span {
+    color: rgb(149, 88, 126);
+    padding-left: 10px;
+}
+
+.projects > div {
+    color: white;
+    background-color: rgb(235, 168, 209);
+    border-left: 5px solid rgb(140, 204, 140);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    padding: 12px;
+    height: 150px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.announcements > span {
+    color: rgb(149, 88, 126);
+}
+
+.ancmt-container {
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(235, 168, 209);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    place-items: center;
+}
+
+.middle-ann {
+    border-top: 1px solid pink;
+    border-bottom: 1px solid pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.trending > span {
+    color: rgb(149, 88, 126);
+}
+
+.trend-container {
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: rgb(235, 168, 209);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    align-items: center;
+}
+
+.trend-container > div {
+    display: flex;
+}
+
+.trend-container > div > img, .trend-container > div > span {
+    margin-right: 10px;
+}
+
+
+
